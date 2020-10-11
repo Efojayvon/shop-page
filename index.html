@@ -1,30 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/shopmain.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/shopstyle.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
-</head>
-<body>
-    <div id="admin-container">
-        <input id="input-create-item" type="text"></input>
-        <button id="button-create-item">Add</button>
+  </head>
+  <body>
+    <div id="cart-container">
+      $0
     </div>
-<div id="container">
-     <div class="item">
-         <div class="name">Accra</div>
-         <img src="assets/beach.jpg" alt="beachside">
-         <div class="description">Best City in Subsaharan africa. The cosmopolitan capital of Ghana</div>
-         <div class="price">499GHS</div>
-         <button>Add to cart</button>
-         <br/>
-         <a href="#">More Info</a>
-         <div class="more-info">Best City in Subsaharan africa. The cosmopolitan capital</div>
-     </div>
-<br style = "clear:left;" />
-</div>    
-</body>
+    <div id="user-data">
+      <form id="cart-form" method="post" action="data/cartSubmit.json">
+        <br/>
+        <label>Name</label>
+        <input name="name" type="text"></input>
+        <br/>
+        <label>Email</label>
+        <input name="email" type="text"></input>
+        <br/>
+        <label>Newsletter?</label>
+        <input name="wantNewsletter" id="newsletter-checkbox" checked type="checkbox"></input>
+        <br/>
+        <select name="newsletterFrequency" id="newsletter-frequency">
+          <option>-</option>
+          <option selected>Weekly</option>
+          <option>Monthly</option>
+        </select>
+        <br/>
+        <button id="submit-cart">Submit</button>
+      </form>
+      <div id="feedback-message"></div>
+    </div>
+    <div id="container">
+      <br style="clear: left;" />
+    </div>
+  </body>
 </html>
