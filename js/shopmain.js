@@ -1,8 +1,6 @@
-$(document).ready(function(){
-    $('#button-create-item').on('click',function(){
+var cart = 0;
 
-        let name= $('#input-create-item').val();
-        $('#input-create-item').val('');
+function addItem(id, name, description, price, moreInfo) {
         
   let html = '';
   html += '<div class="item" data-id="' + id + '">';
