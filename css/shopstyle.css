@@ -17,6 +17,20 @@ body {
     float:left;
     margin:4px;
   }
+
+
+
+  #cart-container {
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+    padding: 12px;
+  }
+  
+  #newsletter-frequency {
+    display: none;
+
+  }
   
   .item img {
     width: 100%;
@@ -31,7 +45,7 @@ body {
     margin-bottom: 8px;
   }
   
-  /*.item .more-info {
+  .item .more-info {
     display: none;
-  }*/
+  }
   
